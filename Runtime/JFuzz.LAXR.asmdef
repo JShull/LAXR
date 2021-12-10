@@ -1,0 +1,32 @@
+{
+    "name": "LAXR",
+    "rootNamespace": "JFuzz.Lazarsfeld",
+    "references": [
+        "Unity.TextMeshPro",
+        "Unity.Timeline"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "PS4",
+        "PS5",
+        "Stadia",
+        "Switch",
+        "tvOS",
+        "XboxOne"
+    ],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        ""
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.textmeshpro",
+            "expression": "3.0.6",
+            "define": "USING_TMPRO"
+        }
+    ],
+    "noEngineReferences": false
+}
