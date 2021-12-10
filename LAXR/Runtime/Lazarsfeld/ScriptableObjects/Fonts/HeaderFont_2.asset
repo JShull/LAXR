@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76992a90124e436428f2469a270deaf9, type: 3}
+  m_Name: HeaderFont_2
+  m_EditorClassIdentifier: 
+  Font:
+    FontType: 0
+    FontAsset: {fileID: 11400000, guid: 43d8172ec9578a440afcd12899cde4ad, type: 2}
+    OverrideTheme: 1
+    FontColor: {r: 1, g: 0.6640479, b: 0, a: 1}
+    FontSize: 20
+    AutoScale: 1
+    MinFontSize: 8
+    MaxFontSize: 72
+    FontData: 

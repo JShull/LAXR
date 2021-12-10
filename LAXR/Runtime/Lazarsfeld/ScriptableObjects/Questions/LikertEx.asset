@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc90332d5fe03334097766601d9a298f, type: 3}
+  m_Name: LikertEx
+  m_EditorClassIdentifier: 
+  Theme: {fileID: 11400000, guid: 704d6ac31dff25a4688ee26cafcc3864, type: 2}
+  PageName: Survey Question(s) Section 1
+  HeaderFont: {fileID: 11400000, guid: d3434e160fc703a4794bd5b3d04a0e0f, type: 2}
+  HeaderInformation: Virtual Reality & Motion Sickness
+  HeaderIconAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0, y: 0}
+    AnchorMax: {x: 0.25, y: 1}
+  HeaderAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.25, y: 0.4}
+    AnchorMax: {x: 1, y: 1}
+  SubHeaderFont: {fileID: 11400000, guid: 06049464bac478c4cb7d39f392ecde6f, type: 2}
+  SubheaderInformation: Please answer the following questions.
+  SubheaderAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.25, y: 0}
+    AnchorMax: {x: 0.9, y: 0.4}
+  BodyFont: {fileID: 11400000, guid: 084ec9cbc6a5bd24c9c85b6df9535cd1, type: 2}
+  BodyAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.01, y: 0.05}
+    AnchorMax: {x: 0.55, y: 0.8}
+  BodyAnchorsNoImage:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.01, y: 0.05}
+    AnchorMax: {x: 0.99, y: 0.8}
+  QuestionSection:
+    SectionName: 'Appendix C: Golding Motion Sickness Questionnaire'
+    QuestionNarrative: 'This questionnaire is designed to find out how susceptible
+      to motion sickness you are, and what sorts of motion are most effective in
+      causing that sickness. Sickness here means feeling queasy or nauseated or actually
+      vomiting '
+    QuestionSubNarrative: As a child (before age 12), how often you felt sick or
+      nauseated.
+    QType: 2
+    QuestionLabelFont: {fileID: 11400000, guid: 9237bc0b3c40df844ba2113a944f9b33, type: 2}
+    QResponseFieldLabels:
+    - Not Applicable
+    - Never Felt Sick
+    - Rarely Felt Sick
+    - Sometimes Felt Sick
+    - Frequently Felt Sick
+    Questions:
+    - QNumber: 1
+      TheQuestion: Cars
+    - QNumber: 2
+      TheQuestion: Buses or Coaches
+    - QNumber: 3
+      TheQuestion: Trains
+    - QNumber: 4
+      TheQuestion: Aircraft
+  ImageData:
+    ImageBorder: {r: 0, g: 0, b: 0, a: 0}
+    GridBased: 0
+    Images: []
+  ImageAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.55, y: 0.2}
+    AnchorMax: {x: 0.95, y: 0.75}
+  FooterFont: {fileID: 11400000, guid: 6bd77ba0aba26cb459fb01a9a161b443, type: 2}
+  FooterInformation: Continue to the next section
+  FooterAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.01, y: 0.01}
+    AnchorMax: {x: 0.99, y: 0.05}

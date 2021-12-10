@@ -1,0 +1,28 @@
+{
+  "name": "com.jfuzz.laxr",
+  "version": "0.1.0",
+  "displayName": "LAXR",
+  "description": "LAXR is the Lazarsfeld apparatus for XR. \nNamed from Paul Lazarsfeld --> https://en.wikipedia.org/wiki/Paul_Lazarsfeld\nHe is credited for being one of the founders of the modern day survey tool. I need some survey tools that work on current XR frameworks and I work in Unity so here we be!",
+  "unity": "2021.2",
+  "unityRelease": "3f1",
+  "documentationUrl": "https://github.com/jshull/LAXR.git",
+  "changelogUrl": "https://github.com/jshull/LAXR.git",
+  "licensesUrl": "https://github.com/jshull/LAXR.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jshull/LAXR.git"
+  },
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.6"
+  },
+  "keywords": [
+    "MRTK",
+    "OpenXR",
+    "Likert"
+  ],
+  "author": {
+    "name": "John Shull",
+    "email": "the.john.shull@gmail.com",
+    "url": "https://github.com/jshull"
+  }
+}
