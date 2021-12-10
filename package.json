@@ -17,9 +17,9 @@
   },
   "samples":[
     {
-      "displayName": "LAXR Scriptable Objects",
+      "displayName": "LAXR Demo Scene",
       "description": "Code to get you off and running",
-      "path": "Samples~/LAXRDemo/"
+      "path": "Samples/LAXRDemo/"
     }
   ],
   "keywords": [
