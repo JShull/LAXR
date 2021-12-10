@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.Events;
 
 namespace JFuzz.Lazarsfeld
 {
@@ -12,6 +13,9 @@ namespace JFuzz.Lazarsfeld
     
     public class FL_Page : MonoBehaviour, IFLPageUpdate
     {
+        [Header("Data Related")]
+        [Space]
+        public UnityEvent DataChanged;
         [Header("Page Index Information")]
         public Transform ParentObject;
        
@@ -297,6 +301,10 @@ namespace JFuzz.Lazarsfeld
         public void GrabStarted()
         {
             Debug.LogWarning($"Grab started");
+
+        }
+        public void DataFieldChanged(string questionfield,string answerfield)
+        {
 
         }
         public void GrabHeld()

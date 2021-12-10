@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
 namespace JFuzz.Lazarsfeld
 {
     /// <summary>
@@ -33,10 +34,13 @@ namespace JFuzz.Lazarsfeld
         [Header("Answer Related")]
         public RectTransform LikertAPanel;
         public GridLayoutGroup AGrid;
+        private FL_Page pageRef;
+        private List<Toggle> _allRadioButtons = new List<Toggle>();
+        
 
         public void InitializePage(FL_Page pageHome, Transform ParentObject, LSection data, FLFont headerFont, FLFont narrativeFont, FLFont subNarrativeFont)
         {
-
+            pageRef = pageHome;
             GetComponent<RectTransform>().anchorMin = Vector2.zero;
             GetComponent<RectTransform>().anchorMax = Vector2.one;
             _qInfo = data;
@@ -89,6 +93,7 @@ namespace JFuzz.Lazarsfeld
                 var aQuestion = GameObject.Instantiate(QPrefab, LikertQPanel);
                 var qText = aQuestion.GetComponent<L_Label>();
                 pageHome.PassFontData(_qInfo.QuestionLabelFont.Font, qText.Label);
+                var question = data.Questions[i].TheQuestion;
                 qText.Label.text = data.Questions[i].TheQuestion;
                 //answer part = radio buttons / need radio group
                 var aAnswer = GameObject.Instantiate(AnswerPrefab, LikertAPanel);
@@ -98,15 +103,36 @@ namespace JFuzz.Lazarsfeld
                 
                 for (int x = 0; x < numLabels; x++)
                 {
+                    var _response = _qInfo.QResponseFieldLabels[x];
                     var aRadioB = GameObject.Instantiate(RadioButtonPrefab, aAnswer.GetComponent<RectTransform>());
                     aRadioB.GetComponent<Toggle>().group = aAnswer.GetComponent<ToggleGroup>();
+                    var toggleR = aRadioB.GetComponent<Toggle>();
+                    toggleR.onValueChanged.AddListener((value)  => RadioButtonChanged(value,headerFont.FontData, question, _response));
                     if (x == 0)
                     {
                         aRadioB.GetComponent<Toggle>().isOn = true;
                     }
+                    _allRadioButtons.Add(aRadioB.GetComponent<Toggle>());
                 }
+               
+
             }
             //running top
+        }
+        public void RadioButtonChanged(bool toggleValue,string section, string question, string response)
+        {
+            if (toggleValue)
+            {
+                L_Survey.Instance.LikertToggleEvent(section, question, response);
+            }
+           
+        }
+        void OnDestroy()
+        {
+            foreach(var rButton in _allRadioButtons)
+            {
+                rButton.onValueChanged.RemoveAllListeners();
+            }
         }
         
         public void NewFontData(string fontClass, FLFont fontData)
