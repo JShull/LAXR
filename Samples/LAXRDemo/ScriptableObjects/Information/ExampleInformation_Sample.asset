@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6c2f666012fd949a4d512de112dc4d, type: 3}
+  m_Name: ExampleInformation_Sample
+  m_EditorClassIdentifier: 
+  Theme: {fileID: 11400000, guid: 5659dd2ad91aed74da4b828e7ed74e7f, type: 2}
+  PageName: Example Information Panel
+  HeaderFont: {fileID: 11400000, guid: 57bac4ac6885d2045a2491d580ce4610, type: 2}
+  HeaderInformation: Example Header
+  HeaderIconAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0, y: 0}
+    AnchorMax: {x: 0.25, y: 1}
+  HeaderAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.25, y: 0.4}
+    AnchorMax: {x: 1, y: 1}
+  SubHeaderFont: {fileID: 11400000, guid: 89f43bc6535e0fe4dbd1a0974c3b8eda, type: 2}
+  SubheaderInformation: Example Subheader
+  SubheaderAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.25, y: 0}
+    AnchorMax: {x: 0.9, y: 0.4}
+  BodyFont: {fileID: 11400000, guid: ff0aa23026d124040adedb18abbc8ce2, type: 2}
+  BodyAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.05, y: 0.2}
+    AnchorMax: {x: 0.55, y: 0.75}
+  BodyAnchorsNoImage:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.05, y: 0.2}
+    AnchorMax: {x: 0.95, y: 0.75}
+  ImageData:
+    ImageBorder: {r: 1, g: 0, b: 0.13624, a: 1}
+    GridBased: 0
+    Images:
+    - {fileID: 21300000, guid: 13f0206976ff45e4d97a480f5c5ad5d1, type: 3}
+    - {fileID: 21300000, guid: 32189132593f5244c9df4e3be6aae0e6, type: 3}
+    - {fileID: 21300000, guid: d1da29d807d17fa469cdf03199b9444e, type: 3}
+  ImageAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.55, y: 0.2}
+    AnchorMax: {x: 0.95, y: 0.75}
+  FooterFont: {fileID: 11400000, guid: 6a6f8e34ff1903e4caa61da01d643b97, type: 2}
+  FooterInformation: Example Footer
+  FooterAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.05, y: 0.01}
+    AnchorMax: {x: 0.8, y: 0.2}
+  BodyInformation: This is a text field area that uses the above Main of Page information
+    to now drop textual information within. All font information used above including
+    anchor positions are all accounted for in this area. Keep in mind that when you
+    use this area and the image area that you should have aligned anchor positions
+    or else you will have content overlapping. This tool isn't smart enough yet to
+    guide you there - but it will eventually!
+  EventData:
+    EventName: Blank
+    DisplayName: Blank
+    EventType: 0
+    EventDetails: 
+  EventAnchor:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.8, y: 0.01}
+    AnchorMax: {x: 0.95, y: 0.2}
+  FooterAnchorNoEvent:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.05, y: 0.01}
+    AnchorMax: {x: 0.95, y: 0.2}

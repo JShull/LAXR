@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd6c9da07868e9a4caf0ed6467dca422, type: 3}
+  m_Name: LikertEx_Sample
+  m_EditorClassIdentifier: 
+  Theme: {fileID: 11400000, guid: 5659dd2ad91aed74da4b828e7ed74e7f, type: 2}
+  PageName: Survey Question(s) Section 1
+  HeaderFont: {fileID: 11400000, guid: 6a6f8e34ff1903e4caa61da01d643b97, type: 2}
+  HeaderInformation: Virtual Reality & Motion Sickness
+  HeaderIconAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0, y: 0}
+    AnchorMax: {x: 0.25, y: 1}
+  HeaderAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.25, y: 0.4}
+    AnchorMax: {x: 1, y: 1}
+  SubHeaderFont: {fileID: 11400000, guid: 57bac4ac6885d2045a2491d580ce4610, type: 2}
+  SubheaderInformation: Please answer the following questions.
+  SubheaderAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.25, y: 0}
+    AnchorMax: {x: 0.9, y: 0.4}
+  BodyFont: {fileID: 11400000, guid: ff0aa23026d124040adedb18abbc8ce2, type: 2}
+  BodyAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.01, y: 0.05}
+    AnchorMax: {x: 0.55, y: 0.8}
+  BodyAnchorsNoImage:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.01, y: 0.05}
+    AnchorMax: {x: 0.99, y: 0.8}
+  ImageData:
+    ImageBorder: {r: 0, g: 0, b: 0, a: 0}
+    GridBased: 0
+    Images: []
+  ImageAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.55, y: 0.2}
+    AnchorMax: {x: 0.95, y: 0.75}
+  FooterFont: {fileID: 11400000, guid: 6a6f8e34ff1903e4caa61da01d643b97, type: 2}
+  FooterInformation: Continue to the next section
+  FooterAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.01, y: 0.01}
+    AnchorMax: {x: 0.99, y: 0.05}
+  QuestionSection:
+    SectionName: 'Appendix C: Golding Motion Sickness Questionnaire'
+    QuestionNarrative: 'This questionnaire is designed to find out how susceptible
+      to motion sickness you are, and what sorts of motion are most effective in
+      causing that sickness. Sickness here means feeling queasy or nauseated or actually
+      vomiting '
+    QuestionSubNarrative: As a child (before age 12), how often you felt sick or
+      nauseated.
+    QType: 2
+    QuestionLabelFont: {fileID: 11400000, guid: ff0aa23026d124040adedb18abbc8ce2, type: 2}
+    QResponseFieldLabels:
+    - Not Applicable
+    - Never Felt Sick
+    - Rarely Felt Sick
+    - Sometimes Felt Sick
+    - Frequently Felt Sick
+    Questions:
+    - QNumber: 1
+      TheQuestion: Cars
+    - QNumber: 2
+      TheQuestion: Buses or Coaches
+    - QNumber: 3
+      TheQuestion: Trains
+    - QNumber: 4
+      TheQuestion: Aircraft

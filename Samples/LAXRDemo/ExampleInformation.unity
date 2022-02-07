@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c22e9087a66a1a4ba00ce4973dfe57e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PageDetails: {fileID: 11400000, guid: 58b281825cc9e8b438e10b1d6325e6b8, type: 2}
+  PageDetails: {fileID: 11400000, guid: a0bc36a9a08b8934eab55ca3c74b8c0b, type: 2}
   InWorldCanvasObject: 1
   KeepParentObject: 1
   TheCamera: {fileID: 907361465}
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c22e9087a66a1a4ba00ce4973dfe57e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PageDetails: {fileID: 11400000, guid: ee37bf5eb3b9c9440915ebce52d55e81, type: 2}
+  PageDetails: {fileID: 11400000, guid: 9f8379b8e99aecb41ab744aa7f2c57bd, type: 2}
   InWorldCanvasObject: 1
   KeepParentObject: 1
   TheCamera: {fileID: 907361465}
