@@ -1,6 +1,20 @@
 # LAXR
 
-First adventure into making some specific Unity tools for XR work. LAXR is the Lazarsfeld apparatus for XR. [Paul Lazarsfeld](https://en.wikipedia.org/wiki/Paul_Lazarsfeld) is credited for being one of the founders of the modern day survey tool. I need some survey tools that work on current XR frameworks and I work in Unity so here we be!
+First adventure into making some specific Unity tools that will eventually be designed to work across all interfaces including XR. LAXR is the Lazarsfeld apparatus for XR. [Paul Lazarsfeld](https://en.wikipedia.org/wiki/Paul_Lazarsfeld) is credited for being one of the founders of the modern day survey tool. I need some survey tools that work on current XR frameworks and I work in Unity so here we be!
+
+## General Design & Basic Information
+
+Currently using a simple data oriented design - in which my data are Unity ScriptableObject files tied to custom Structs. This is a quick way to maintain references across Unity Projects and not run into weird class dependency problems. I then am using MonoBehaviour derived classes to setup Unity visuals tied to Canvas Objects and a bunch of misc. UI prefabs I've built to work with it. Eventually I will have some editor scripts to go along with helping you create your own - for the time being it's very manual and tedious but once you figure it out, it should save you some time on simple things! See the ChangeLog.md for more detail updates and additional notes. This is currently in an unreleased state - as I am working through figuring out best/better practices with Unity and the Package Manager. Please see the current video that goes along with unrelease version 0.2.0
+
+## Install & Dependencies
+
+* For Normal Unity Setup
+* 🚀 📺 [Unlisted YouTube Video for a quick walk through](https://youtu.be/3nW1QMGXDGk)
+* For MRTK Use Cases **VERY IMPORTANT**
+  * You need to have a fresh Unity project already configured with [MRTK 2.7.2](https://github.com/microsoft/MixedRealityToolkit-Unity)
+  * Some minor [MRTK Bug Fixes](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9938/commits/b199b3459298f31a599c28ab7863d0abb1a5acdf)
+    * This should be fun!
+* Unity Package Manager to the rescue... well I hope 
 
 ## Active Development Dates
 
@@ -12,18 +26,11 @@ First adventure into making some specific Unity tools for XR work. LAXR is the L
 * November 2021
   * Lazarsfeld is almost alive!
     * Data tool for procedurally generating a diegetic simple survey apparatus
-      * Likert based questions (working)
-      * Multiple choice questions (on their way)
-      * Multiple select questions (on their way)
+      * Likert based questions (working) - simple version is working
       * JSON serialized class tied to a series of scriptable objects and prefabs (partially working)
-
-## Install & Dependencies
-
-* **VERY IMPORTANT**
-  * You need to have a fresh Unity project already configured with [MRTK 2.7.2](https://github.com/microsoft/MixedRealityToolkit-Unity)
-  * Some minor [MRTK Bug Fixes](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9938/commits/b199b3459298f31a599c28ab7863d0abb1a5acdf)
-    * This should be fun!
-* Unity Package Manager to the rescue!
+* February 2022
+  * Updates to include generic Layout panels
+  * Still haven't finalized all the other question types as I'm doing this work after hours
 
 ## License Notes
 
