@@ -13,8 +13,7 @@
     "url": "https://github.com/jshull/LAXR.git"
   },
   "dependencies": {
-    "com.unity.textmeshpro": "3.0.6",
-    "com.unity.inputsystem": "1.0.2"
+    "com.unity.textmeshpro": "3.0.6"
   },
   "samples":[
     {
