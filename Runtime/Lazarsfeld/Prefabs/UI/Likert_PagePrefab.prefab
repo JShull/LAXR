@@ -28,7 +28,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7202951549117849094}
   m_RootOrder: 1
@@ -55,27 +54,146 @@ MonoBehaviour:
   m_GameObject: {fileID: 334968828774234246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b2c91731da2196468b32a5582a29782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
+  DataChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  ParentObject: {fileID: 0}
+  ZIndex: 0
+  PageName: 
+  LikertQuestionPrefab: {fileID: 0}
+  PageCanvas: {fileID: 0}
+  PageRoot: {fileID: 0}
+  PageHeaderRoot: {fileID: 0}
+  PageBodyRoot: {fileID: 0}
+  PageFooterRoot: {fileID: 0}
+  ImageRoot: {fileID: 0}
+  EventRoot: {fileID: 0}
+  TitleRoot: {fileID: 0}
+  SubheaderRoot: {fileID: 0}
+  IconRoot: {fileID: 0}
+  PageRootBackdrop: {fileID: 0}
+  PageHeaderBackdrop: {fileID: 0}
+  PageBodyBackdrop: {fileID: 0}
+  PageFooterBackdrop: {fileID: 0}
+  PageHeaderIcon: {fileID: 0}
+  PageImageRoot: {fileID: 0}
+  PageHeaderTitle: {fileID: 0}
+  PageSubheader: {fileID: 0}
+  AdditionalText: {fileID: 0}
+  PageFooterText: {fileID: 0}
+  PageData:
+    ZIndex: 0
+    Icon: {fileID: 0}
+    PageRootBackdrop: {fileID: 0}
+    PageHeaderBackdrop: {fileID: 0}
+    PageBodyBackdrop: {fileID: 0}
+    PageFooterBackdrop: {fileID: 0}
+    HeaderColor: {r: 0, g: 0, b: 0, a: 0}
+    BodyColor: {r: 0, g: 0, b: 0, a: 0}
+    RootColor: {r: 0, g: 0, b: 0, a: 0}
+    FooterColor: {r: 0, g: 0, b: 0, a: 0}
+    AddedImages:
+      ImageBorder: {r: 0, g: 0, b: 0, a: 0}
+      GridBased: 0
+      Images: []
+    HeaderFont:
+      FontType: 0
+      FontAsset: {fileID: 0}
+      OverrideTheme: 0
+      FontColor: {r: 0, g: 0, b: 0, a: 0}
+      FontSize: 0
+      AutoScale: 0
+      MinFontSize: 0
+      MaxFontSize: 0
+      FontData: 
+    SubHeaderFont:
+      FontType: 0
+      FontAsset: {fileID: 0}
+      OverrideTheme: 0
+      FontColor: {r: 0, g: 0, b: 0, a: 0}
+      FontSize: 0
+      AutoScale: 0
+      MinFontSize: 0
+      MaxFontSize: 0
+      FontData: 
+    BodyFont:
+      FontType: 0
+      FontAsset: {fileID: 0}
+      OverrideTheme: 0
+      FontColor: {r: 0, g: 0, b: 0, a: 0}
+      FontSize: 0
+      AutoScale: 0
+      MinFontSize: 0
+      MaxFontSize: 0
+      FontData: 
+    FooterFont:
+      FontType: 0
+      FontAsset: {fileID: 0}
+      OverrideTheme: 0
+      FontColor: {r: 0, g: 0, b: 0, a: 0}
+      FontSize: 0
+      AutoScale: 0
+      MinFontSize: 0
+      MaxFontSize: 0
+      FontData: 
+    PageEvent:
+      EventName: 
+      DisplayName: 
+      EventType: 0
+      EventDetails: 
+    RectTitle:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+    RectSubheader:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+    RectIcon:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+    RectBodyWithImage:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+    RectBodyWithNOImage:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+    RectImage:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+    RectFooter:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+    RectFooterNOEvent:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+    RectEvent:
+      AnchorPosition: {x: 0, y: 0}
+      AnchorMin: {x: 0, y: 0}
+      AnchorMax: {x: 0, y: 0}
+  PageTheme:
+    Icon: {fileID: 0}
+    BackdropBorderImage: {fileID: 0}
+    BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+    HeaderColor: {r: 0, g: 0, b: 0, a: 0}
+    BodyColor: {r: 0, g: 0, b: 0, a: 0}
+    FooterColor: {r: 0, g: 0, b: 0, a: 0}
+    HeaderFontColor: {r: 0, g: 0, b: 0, a: 0}
+    SubHeaderFontColor: {r: 0, g: 0, b: 0, a: 0}
+    MainFontColor: {r: 0, g: 0, b: 0, a: 0}
+    FooterFontColor: {r: 0, g: 0, b: 0, a: 0}
+  PageEventButton: {fileID: 0}
+  ContainerPrefab: {fileID: 0}
+  ContainerObjects: []
 --- !u!1 &2196359543815659444
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +222,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4787430747965649748}
   - {fileID: 2312530230284458087}
@@ -183,7 +300,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.0051}
   m_LocalScale: {x: 0.2159, y: 0.28, z: 0.01}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8864982069084486729}
   m_RootOrder: 0
@@ -207,7 +323,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -277,7 +392,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6567910479928349739}
   - {fileID: 7202951549117849094}
@@ -317,7 +431,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2312530230284458087}
   m_RootOrder: 0
@@ -453,7 +566,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3593476297182055209}
   m_Father: {fileID: 7685409156411152570}
@@ -587,7 +699,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5690448078669831232}
   m_Father: {fileID: 7685409156411152570}
@@ -720,7 +831,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7518216464806143054}
   m_RootOrder: 0
@@ -853,7 +963,6 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7685409156411152570}
   - {fileID: 7400993862577950793}
@@ -893,7 +1002,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2547192953997959605}
   m_Father: {fileID: 8864982070309582935}
@@ -921,10 +1029,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7062220134809202104}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c208384e83558f748acbc1bc07c918b3, type: 3}
+  m_Script: {fileID: 11500000, guid: b4ecbcf28909bd549b49ee054b9542d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageBorderColor: {r: 0, g: 0, b: 0, a: 1}
+  ImageBorderColor: {r: 0, g: 0, b: 0, a: 0}
   GridBasedSystem: 0
   ImageTransforms: []
   GridLayoutManager: {fileID: 7091669528579305316}
@@ -933,7 +1041,7 @@ MonoBehaviour:
   SlideImageParentRoot: {fileID: 7202951549117849094}
   SlideImageContainer: {fileID: 7400993862577950793}
   ImageControlBoardBackground: {fileID: 2324673748474037074}
-  ImagePrefab: {fileID: 906689791789423460, guid: aab33f49ac1fe1f47966c730fcce45df, type: 3}
+  ImagePrefab: {fileID: 906689791789423460, guid: 4c020d9594918f64aa85133583e9ef69, type: 3}
 --- !u!1 &7149483426819411479
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +1070,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4787430747965649748}
   m_RootOrder: 0
@@ -1095,7 +1202,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7518216464806143054}
   m_Father: {fileID: 8864982070309582935}
@@ -1135,7 +1241,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4387806095957799946}
   m_Father: {fileID: 5461740156534569182}
@@ -1256,7 +1361,6 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2547192953997959605}
   m_RootOrder: 0
@@ -1333,7 +1437,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8864982070309582935}
   m_Father: {fileID: 8864982069084486729}
@@ -1433,7 +1536,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8864982069006535363}
   m_Father: {fileID: 8864982070309582935}
@@ -1510,7 +1612,6 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8864982069005146856}
   m_RootOrder: 0
@@ -1551,8 +1652,8 @@ MonoBehaviour:
   m_text: Algorithm, program, subprogram, processor, Game Designer, Software Developer,
     Graphic Artist, Modeling and Simulation Engineer and more!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2134b24c40dbeb847a52105e218433df, type: 2}
-  m_sharedMaterial: {fileID: -1889708145280477234, guid: 2134b24c40dbeb847a52105e218433df, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1646,7 +1747,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8864982069958983910}
   m_RootOrder: 2
@@ -1686,8 +1786,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SUBHEADER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c7df62d0df5923446beab6d79a0c6840, type: 2}
-  m_sharedMaterial: {fileID: 7042366202800805943, guid: c7df62d0df5923446beab6d79a0c6840, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1711,7 +1811,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.65
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1782,7 +1882,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3484409417612778590}
   - {fileID: 8864982068766028367}
@@ -1798,7 +1897,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8864982069084486730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aacbda46c586164bb4bdef4679fe3c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b2c91731da2196468b32a5582a29782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DataChanged:
@@ -1807,7 +1906,7 @@ MonoBehaviour:
   ParentObject: {fileID: 0}
   ZIndex: 0
   PageName: 
-  LikertQuestionPrefab: {fileID: 8300143402797225732, guid: 99a0af0a538a6c847a5fa91601640765, type: 3}
+  LikertQuestionPrefab: {fileID: 8300143402797225732, guid: 578220b97c77baa41bb044fb2c75fc30, type: 3}
   PageCanvas: {fileID: 8864982068766028364}
   PageRoot: {fileID: 8864982070309582935}
   PageHeaderRoot: {fileID: 8864982069958983910}
@@ -1927,12 +2026,13 @@ MonoBehaviour:
   PageTheme:
     Icon: {fileID: 0}
     BackdropBorderImage: {fileID: 0}
+    BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
     HeaderColor: {r: 0, g: 0, b: 0, a: 0}
-    RootColor: {r: 0, g: 0, b: 0, a: 0}
     BodyColor: {r: 0, g: 0, b: 0, a: 0}
     FooterColor: {r: 0, g: 0, b: 0, a: 0}
-    MainFontColor: {r: 0, g: 0, b: 0, a: 0}
     HeaderFontColor: {r: 0, g: 0, b: 0, a: 0}
+    SubHeaderFontColor: {r: 0, g: 0, b: 0, a: 0}
+    MainFontColor: {r: 0, g: 0, b: 0, a: 0}
     FooterFontColor: {r: 0, g: 0, b: 0, a: 0}
   PageEventButton: {fileID: 128944430814277019}
   ContainerPrefab: {fileID: 0}
@@ -2074,7 +2174,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8864982069958983910}
   m_RootOrder: 1
@@ -2114,8 +2213,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: HEADER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c7df62d0df5923446beab6d79a0c6840, type: 2}
-  m_sharedMaterial: {fileID: 7042366202800805943, guid: c7df62d0df5923446beab6d79a0c6840, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2209,7 +2308,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8864982070322462643}
   m_RootOrder: 0
@@ -2249,8 +2347,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32da6cdca61fcdc4a9a89437c77877e8, type: 2}
-  m_sharedMaterial: {fileID: -3127272363122502295, guid: 32da6cdca61fcdc4a9a89437c77877e8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2344,7 +2442,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8864982070477615362}
   - {fileID: 8864982069267343858}
@@ -2423,7 +2520,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8864982069958983910}
   - {fileID: 8864982070648153188}
@@ -2505,7 +2601,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8864982069450689105}
   m_Father: {fileID: 8864982070648153188}
@@ -2563,7 +2658,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8864982070322462644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c17af1961c5c04345bd811cd6b3195b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c5d89dedda2b7647b710271a907eba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Container: {fileID: 8864982070322462643}
@@ -2600,7 +2695,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8864982069958983910}
   m_RootOrder: 0
@@ -2676,7 +2770,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8864982070322462643}
   m_Father: {fileID: 8864982070309582935}

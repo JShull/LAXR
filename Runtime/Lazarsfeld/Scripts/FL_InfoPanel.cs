@@ -43,7 +43,8 @@ namespace JFuzz.Lazarsfeld
                 var ExampleData = _pageInstance.GetComponent<FL_Page>();
                 try
                 {
-                    FLPage tempPagedata = new()
+                    
+                    FLPage tempPagedata = new FLPage
                     {
                         Icon = PageDetails.Theme.ThemeInfo.Icon,
                         PageRootBackdrop = PageDetails.Theme.ThemeInfo.BackdropBorderImage,

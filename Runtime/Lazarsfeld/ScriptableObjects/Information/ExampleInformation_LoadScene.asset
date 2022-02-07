@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6f56188bb74189458297c6cfce94927, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f6c2f666012fd949a4d512de112dc4d, type: 3}
   m_Name: ExampleInformation_LoadScene
   m_EditorClassIdentifier: 
-  Theme: {fileID: 11400000, guid: 0ff626727308b3e4ea42825815f1e17f, type: 2}
+  Theme: {fileID: 11400000, guid: 08dc451314d374741962f24eb05f80f6, type: 2}
   PageName: Example Information Panel
-  HeaderFont: {fileID: 11400000, guid: 209e86ccf85875a4793c07e85ebb589a, type: 2}
+  HeaderFont: {fileID: 11400000, guid: 101ade63e10fca24bab0b064f7c4e327, type: 2}
   HeaderInformation: Example Header
   HeaderIconAnchors:
     AnchorPosition: {x: 0, y: 0}
@@ -24,13 +24,13 @@ MonoBehaviour:
     AnchorPosition: {x: 0, y: 0}
     AnchorMin: {x: 0.25, y: 0.4}
     AnchorMax: {x: 1, y: 1}
-  SubHeaderFont: {fileID: 11400000, guid: df51b9bc7945b67429ee74dda835f4bc, type: 2}
+  SubHeaderFont: {fileID: 11400000, guid: 62ea7c177ea5ee64b8821fa8db720a82, type: 2}
   SubheaderInformation: Example Subheader
   SubheaderAnchors:
     AnchorPosition: {x: 0, y: 0}
     AnchorMin: {x: 0.25, y: 0}
     AnchorMax: {x: 0.9, y: 0.4}
-  BodyFont: {fileID: 11400000, guid: 084ec9cbc6a5bd24c9c85b6df9535cd1, type: 2}
+  BodyFont: {fileID: 11400000, guid: c23ac8037c77b3e4488aae3bf42e13d7, type: 2}
   BodyAnchors:
     AnchorPosition: {x: 0, y: 0}
     AnchorMin: {x: 0.05, y: 0.2}
@@ -43,14 +43,14 @@ MonoBehaviour:
     ImageBorder: {r: 1, g: 0, b: 0.13624, a: 1}
     GridBased: 0
     Images:
-    - {fileID: 21300000, guid: a93356f451058db4d8551a897b4c41d1, type: 3}
-    - {fileID: 21300000, guid: 4abece225f95be34a91ec538280209fb, type: 3}
-    - {fileID: 21300000, guid: 820cb8e400b27034b8f7f6b8652fef58, type: 3}
+    - {fileID: 21300000, guid: 13f0206976ff45e4d97a480f5c5ad5d1, type: 3}
+    - {fileID: 21300000, guid: 32189132593f5244c9df4e3be6aae0e6, type: 3}
+    - {fileID: 21300000, guid: d1da29d807d17fa469cdf03199b9444e, type: 3}
   ImageAnchors:
     AnchorPosition: {x: 0, y: 0}
     AnchorMin: {x: 0.55, y: 0.2}
     AnchorMax: {x: 0.95, y: 0.75}
-  FooterFont: {fileID: 11400000, guid: 6bd77ba0aba26cb459fb01a9a161b443, type: 2}
+  FooterFont: {fileID: 11400000, guid: fe1cc851b4b3e294d848ff65a7d891f6, type: 2}
   FooterInformation: Example Footer
   FooterAnchors:
     AnchorPosition: {x: 0, y: 0}
@@ -63,8 +63,8 @@ MonoBehaviour:
     or else you will have content overlapping. This tool isn't smart enough yet to
     guide you there - but it will eventually!
   EventData:
-    EventName: Load Likert
-    DisplayName: Load Likert Example
+    EventName: LoadLikert
+    DisplayName: Load Likert
     EventType: 0
     EventDetails: ExampleLikert
   EventAnchor:

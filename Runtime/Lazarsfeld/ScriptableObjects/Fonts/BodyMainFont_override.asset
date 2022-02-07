@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76992a90124e436428f2469a270deaf9, type: 3}
+  m_Script: {fileID: 11500000, guid: 65a8dcc235f1c5c4ea583d1473f6dae3, type: 3}
   m_Name: BodyMainFont_override
   m_EditorClassIdentifier: 
   Font:
     FontType: 2
-    FontAsset: {fileID: 11400000, guid: c7df62d0df5923446beab6d79a0c6840, type: 2}
+    FontAsset: {fileID: 11400000, guid: e7f04c45fc49e794f89930b2cca3007d, type: 2}
     OverrideTheme: 1
     FontColor: {r: 0, g: 0, b: 0, a: 1}
     FontSize: 12

@@ -95,7 +95,7 @@ namespace JFuzz.Lazarsfeld
                 */
                 try
                 {
-                    FLPage tempPagedata = new()
+                    FLPage tempPagedata = new FLPage
                     {
                         Icon = QuestionDetails.Theme.ThemeInfo.Icon,
                         PageRootBackdrop = QuestionDetails.Theme.ThemeInfo.BackdropBorderImage,
