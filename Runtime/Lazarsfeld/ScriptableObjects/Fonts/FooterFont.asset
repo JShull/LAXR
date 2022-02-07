@@ -19,6 +19,6 @@ MonoBehaviour:
     FontColor: {r: 0, g: 0, b: 0, a: 1}
     FontSize: 11
     AutoScale: 1
-    MinFontSize: 8
-    MaxFontSize: 16
+    MinFontSize: 10
+    MaxFontSize: 24
     FontData: 

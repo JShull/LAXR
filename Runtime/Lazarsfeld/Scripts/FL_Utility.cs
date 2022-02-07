@@ -16,7 +16,7 @@ namespace JFuzz.Lazarsfeld
         void NewFontData(string fontClass,FLFont fontData);
         void OnIconUpdate(Sprite newIcon);
         void NewContainerData(RectTransform ParentObject, bool useParentTheme, FLFont fontData);
-        void InitializePage(Transform ParentObject, FLPage pageData, string pageName, FLTheme themeData);
+        void InitializePage(Transform ParentObject, FLPage pageData, string pageName, FLTheme themeData, bool worldCam, Camera theCamera);
     }
 
     public interface IFLContainerUpdate
@@ -26,9 +26,17 @@ namespace JFuzz.Lazarsfeld
         void OnContainerColorUpdate(Color baseColor);
         void OnAnchorUpdate(FLAnchors anchorData);
         void Initialize(RectTransform parentContainer, bool useParentTheme);
-       
     }
-    
+    /// <summary>
+    /// Interface to manage one way to always setup these page/data objects
+    /// </summary>
+    public interface IPageSetup
+    {
+        void SetupPanelData(Camera MainCam, Transform LocationOfPlacement, Vector3 LocationAdditionalOffset, bool WorldCanvas, bool KeepParent);
+    }
+    /// <summary>
+    /// Interface for all font based information and exchange of information
+    /// </summary>
     public interface IFLFont
     {
         void InitializeFont(FLFont fontData);
@@ -67,6 +75,7 @@ namespace JFuzz.Lazarsfeld
         public string EventName;
         public string DisplayName;
         public PageEvents EventType;
+        [Tooltip("If the event is loading a scene this is the scene name to load")]
         public string EventDetails;
     }
     [Serializable]
@@ -99,17 +108,29 @@ namespace JFuzz.Lazarsfeld
     [Serializable]
     public struct FLTheme
     {
+        [Tooltip("Icon Will Appear next to Header Text")]
         public Sprite Icon;
+        [Tooltip("Image maintains aspect ratio")]
         public Sprite BackdropBorderImage;
+        [Header("Background Related Colors")]
+        [Tooltip("Main Background Color to Root Canvas")]
+        public Color BackGroundColor;
+        [Tooltip("Color of Header Background")]
         public Color HeaderColor;
-        public Color RootColor;
+        [Tooltip("Color of Body Background")]
         public Color BodyColor;
+        [Tooltip("Color of Footer Background")]
         public Color FooterColor;
-
-        public Color MainFontColor;
+        [Space]
+        [Header("Font Related Colors")]
+        [Tooltip("Color of Header Font")]
         public Color HeaderFontColor;
+        [Tooltip("Color of Sub-Header Font")]
+        public Color SubHeaderFontColor;
+        [Tooltip("Color of Main Font")]
+        public Color MainFontColor;
+        [Tooltip("Color of Footer Font")]
         public Color FooterFontColor;
-        
     }
     [Serializable]
     public struct FLPage
@@ -203,5 +224,4 @@ namespace JFuzz.Lazarsfeld
             return obj;
         }
     }
-
 }

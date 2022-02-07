@@ -1,6 +1,6 @@
 {
   "name": "com.jfuzz.laxr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "LAXR",
   "description": "LAXR is the Lazarsfeld apparatus for XR. \nNamed from Paul Lazarsfeld --> https://en.wikipedia.org/wiki/Paul_Lazarsfeld\nHe is credited for being one of the founders of the modern day survey tool. I need some survey tools that work on current XR frameworks and I work in Unity so here we be!",
   "unity": "2021.2",

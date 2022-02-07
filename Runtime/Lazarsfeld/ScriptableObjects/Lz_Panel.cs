@@ -1,16 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 namespace JFuzz.Lazarsfeld
 {
-    [CreateAssetMenu(fileName = "Likert Details", menuName = "ScriptableObjects/JFuzz/Lazarsfeld/Likert", order = 4)]
-    public class Lz_Likert : Lz_Info
+    [CreateAssetMenu(fileName = "Simple Information Panel", menuName = "ScriptableObjects/JFuzz/Lazarsfeld/Info_Panel", order = 5)]
+    public class Lz_Panel : Lz_Info
     {
+        [Space]
+        [Header("Textual Information in the Body")]
+        [TextArea(5, 10)]
+        public string BodyInformation;
+        [Space]
+        [Header("Event Info")]
+        public FLEvent EventData;
+        public FLAnchors EventAnchor;
+        public FLAnchors FooterAnchorNoEvent;
         /*
         [Header("Theme the Page")]
         public FL_Theme Theme;
         public string PageName;
-        
+
         [Space]
         [Header("Header of Page")]
         public FL_Font HeaderFont;
@@ -23,17 +33,13 @@ namespace JFuzz.Lazarsfeld
         public FL_Font SubHeaderFont;
         public string SubheaderInformation;
         public FLAnchors SubheaderAnchors;
-       
+
         [Space]
         [Header("Main of Page")]
         public FL_Font BodyFont;
         public FLAnchors BodyAnchors;
         public FLAnchors BodyAnchorsNoImage;
-        */
-        [Space]
-        [Header("Question Information")]
-        public LSection QuestionSection;
-        /*
+        
         [Space]
         [Header("Image info")]
         public FLImage ImageData;
@@ -44,9 +50,5 @@ namespace JFuzz.Lazarsfeld
         public string FooterInformation;
         public FLAnchors FooterAnchors;
         */
-        //public FLAnchors FooterAnchorsNoEvent;
-        
-
     }
-
 }

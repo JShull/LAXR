@@ -30,7 +30,7 @@ MonoBehaviour:
     AnchorPosition: {x: 0, y: 0}
     AnchorMin: {x: 0.25, y: 0}
     AnchorMax: {x: 0.9, y: 0.4}
-  BodyFont: {fileID: 11400000, guid: 084ec9cbc6a5bd24c9c85b6df9535cd1, type: 2}
+  BodyFont: {fileID: 11400000, guid: c15f0f4655eb1fb48ad10d2494c9d757, type: 2}
   BodyAnchors:
     AnchorPosition: {x: 0, y: 0}
     AnchorMin: {x: 0.01, y: 0.05}
@@ -39,6 +39,20 @@ MonoBehaviour:
     AnchorPosition: {x: 0, y: 0}
     AnchorMin: {x: 0.01, y: 0.05}
     AnchorMax: {x: 0.99, y: 0.8}
+  ImageData:
+    ImageBorder: {r: 0, g: 0, b: 0, a: 0}
+    GridBased: 0
+    Images: []
+  ImageAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.55, y: 0.2}
+    AnchorMax: {x: 0.95, y: 0.75}
+  FooterFont: {fileID: 11400000, guid: 6bd77ba0aba26cb459fb01a9a161b443, type: 2}
+  FooterInformation: Continue to the next section
+  FooterAnchors:
+    AnchorPosition: {x: 0, y: 0}
+    AnchorMin: {x: 0.01, y: 0.01}
+    AnchorMax: {x: 0.99, y: 0.05}
   QuestionSection:
     SectionName: 'Appendix C: Golding Motion Sickness Questionnaire'
     QuestionNarrative: 'This questionnaire is designed to find out how susceptible
@@ -64,17 +78,3 @@ MonoBehaviour:
       TheQuestion: Trains
     - QNumber: 4
       TheQuestion: Aircraft
-  ImageData:
-    ImageBorder: {r: 0, g: 0, b: 0, a: 0}
-    GridBased: 0
-    Images: []
-  ImageAnchors:
-    AnchorPosition: {x: 0, y: 0}
-    AnchorMin: {x: 0.55, y: 0.2}
-    AnchorMax: {x: 0.95, y: 0.75}
-  FooterFont: {fileID: 11400000, guid: 6bd77ba0aba26cb459fb01a9a161b443, type: 2}
-  FooterInformation: Continue to the next section
-  FooterAnchors:
-    AnchorPosition: {x: 0, y: 0}
-    AnchorMin: {x: 0.01, y: 0.01}
-    AnchorMax: {x: 0.99, y: 0.05}

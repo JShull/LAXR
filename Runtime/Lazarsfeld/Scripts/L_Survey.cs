@@ -5,7 +5,7 @@ using System;
 
 namespace JFuzz.Lazarsfeld
 {
-    public class L_Survey: MonoBehaviour
+    public class L_Survey: MonoBehaviour, IPageSetup
     {
         /// <summary>
         /// Quick Singleton for demo purposes
@@ -72,16 +72,27 @@ namespace JFuzz.Lazarsfeld
         /// </summary>
         public void SetupPage()
         {
-            _pageInstance = GameObject.Instantiate(PagePrefab);
+            //modified for interface use now
+            SetupPanelData(MainCam, AlignUIPosition, OffsetPanelPosition, false, false) ;
             
+        }
+        public void SetupPanelData(Camera TheMainCam, Transform LocationOfPlacement, Vector3 LocationAdditionalOffset, bool InWorldCanvas, bool KeepParent)
+        {
+            AlignUIPosition = LocationOfPlacement;
+            OffsetPanelPosition = LocationAdditionalOffset;
+            this.MainCam = TheMainCam;
+            _pageInstance = GameObject.Instantiate(PagePrefab);
+
             if (_pageInstance.GetComponent<FL_Page>())
             {
-                
+
                 var ExampleData = _pageInstance.GetComponent<FL_Page>();
+                /*
                 if (MainCam != null)
                 {
                     ExampleData.PageCanvas.worldCamera = MainCam;
                 }
+                */
                 try
                 {
                     FLPage tempPagedata = new()
@@ -91,7 +102,7 @@ namespace JFuzz.Lazarsfeld
                         BodyColor = QuestionDetails.Theme.ThemeInfo.BodyColor,
                         HeaderColor = QuestionDetails.Theme.ThemeInfo.HeaderColor,
                         FooterColor = QuestionDetails.Theme.ThemeInfo.FooterColor,
-                        RootColor = QuestionDetails.Theme.ThemeInfo.RootColor,
+                        RootColor = QuestionDetails.Theme.ThemeInfo.BackGroundColor,
                         BodyFont = QuestionDetails.BodyFont.Font,
                         FooterFont = QuestionDetails.FooterFont.Font,
                         HeaderFont = QuestionDetails.HeaderFont.Font,
@@ -102,9 +113,7 @@ namespace JFuzz.Lazarsfeld
                         RectBodyWithImage = QuestionDetails.BodyAnchors,
                         RectBodyWithNOImage = QuestionDetails.BodyAnchorsNoImage,
                         RectImage = QuestionDetails.ImageAnchors,
-                        //PageEvent = QuestionDetails.EventData,
                         RectFooter = QuestionDetails.FooterAnchors,
-                        //RectEvent = QuestionDetails.EventAnchor,
                         RectFooterNOEvent = QuestionDetails.FooterAnchors,
                         AddedImages = QuestionDetails.ImageData,
                     };
@@ -113,22 +122,35 @@ namespace JFuzz.Lazarsfeld
                     tempPagedata.SubHeaderFont.FontData = QuestionDetails.HeaderInformation;
                     tempPagedata.FooterFont.FontData = QuestionDetails.FooterInformation;
 
-                    ExampleData.InitializePage(AlignUIPosition, tempPagedata, QuestionDetails.PageName, QuestionDetails.Theme.ThemeInfo);
+                    ExampleData.InitializePage(AlignUIPosition, tempPagedata, QuestionDetails.PageName, QuestionDetails.Theme.ThemeInfo, InWorldCanvas, MainCam);
                     _pageInstance.transform.position = AlignUIPosition.transform.position + OffsetPanelPosition;
-                    _pageInstance.transform.SetParent(null);
-                    if (QuestionDetails.QuestionSection.QType== QuestionType.Likert)
+                    if (!KeepParent)
                     {
-                        ExampleData.QuestionSetupLikert(QuestionDetails.QuestionSection);
+                        _pageInstance.transform.SetParent(null);
                     }
+                    
+                    switch (QuestionDetails.QuestionSection.QType)
+                    {
+                        case QuestionType.Likert:
+                            ExampleData.QuestionSetupLikert(QuestionDetails.QuestionSection);
+                            break;
+                        default:
+                            Debug.LogError($"Currently not supporting other question types");
+                            break;
+                    }
+                    
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Debug.LogError($"More than likely missing other references to Themes/Fonts: {ex.Message}");
                 }
                 AfterPageSetupEvent.Invoke();
-                
             }
-            
+        }
+
+        public void FinishedPanelData()
+        {
+            //throw new NotImplementedException();
         }
     }
 }

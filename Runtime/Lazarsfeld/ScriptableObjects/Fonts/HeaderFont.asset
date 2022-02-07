@@ -15,7 +15,7 @@ MonoBehaviour:
   Font:
     FontType: 0
     FontAsset: {fileID: 11400000, guid: 43d8172ec9578a440afcd12899cde4ad, type: 2}
-    OverrideTheme: 1
+    OverrideTheme: 0
     FontColor: {r: 1, g: 0, b: 0, a: 1}
     FontSize: 20
     AutoScale: 1

@@ -105,9 +105,15 @@ namespace JFuzz.Lazarsfeld
             GameObject LikertSectionPrefab = GameObject.Instantiate(LikertQuestionPrefab, PageBodyRoot);
             LikertSectionPrefab.GetComponent<L_Likert>().InitializePage(this,PageBodyRoot, questionData, PageData.SubHeaderFont, PageData.BodyFont, PageData.FooterFont);
         }
-        public void InitializePage(Transform parentObject, FLPage pageData, string pageName, FLTheme themeData)
+        
+        public void InitializePage(Transform parentObject, FLPage pageData, string pageName, FLTheme themeData, bool WorldCanvas, Camera theCam)
         {
-           
+            if (WorldCanvas)
+            {
+                PageCanvas.renderMode = RenderMode.WorldSpace;
+                PageCanvas.worldCamera = theCam;
+            }
+            
             PageName = pageName;
             ParentObject = parentObject;
             this.transform.SetParent(ParentObject);
@@ -144,6 +150,8 @@ namespace JFuzz.Lazarsfeld
             if (PageData.PageRootBackdrop != null)
             {
                 PageRootBackdrop.sprite = PageData.PageRootBackdrop;
+                PageRootBackdrop.type = Image.Type.Simple;
+                PageRootBackdrop.preserveAspect = true;
             }
             PageRootBackdrop.color = PageData.RootColor;
 
@@ -183,7 +191,6 @@ namespace JFuzz.Lazarsfeld
                 PageBodyRoot.anchorMin = PageData.RectBodyWithNOImage.AnchorMin;
                 ImageRoot.anchorMin = Vector2.zero;
                 ImageRoot.anchorMax = Vector2.zero;
-                
             }
             PageFooterBackdrop.color = PageData.FooterColor;
             //rebuild font objects
@@ -203,7 +210,7 @@ namespace JFuzz.Lazarsfeld
                 if (!PageData.SubHeaderFont.OverrideTheme)
                 {
                     //use theme color
-                    PageData.SubHeaderFont.FontColor = PageTheme.HeaderFontColor;
+                    PageData.SubHeaderFont.FontColor = PageTheme.SubHeaderFontColor;
                 }
                 NewFontData(FontStyles.SubHeader.ToString(), PageData.SubHeaderFont);
             }
@@ -212,7 +219,7 @@ namespace JFuzz.Lazarsfeld
                 if (!PageData.BodyFont.OverrideTheme)
                 {
                     //use theme color
-                    PageData.BodyFont.FontColor = PageTheme.BodyColor;
+                    PageData.BodyFont.FontColor = PageTheme.MainFontColor;
                 }
                 NewFontData(FontStyles.Body.ToString(), PageData.BodyFont);
             }
@@ -290,13 +297,18 @@ namespace JFuzz.Lazarsfeld
                 PageEventButton.onClick.RemoveListener(InvokePageEvent);
             }   
         }
-
+        public void OnEnable()
+        {
+            if (PageData.PageEvent.DisplayName != "")
+            {
+                PageEventButton.onClick.AddListener(InvokePageEvent);
+            }
+        }
         public void OnIconUpdate(Sprite newIcon)
         {
             PageData.Icon = newIcon;
             PageHeaderIcon.sprite = newIcon;
         }
-
         #endregion
         public void GrabStarted()
         {

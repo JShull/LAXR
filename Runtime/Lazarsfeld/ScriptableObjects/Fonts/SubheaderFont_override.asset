@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76992a90124e436428f2469a270deaf9, type: 3}
-  m_Name: LikertLabelFont
+  m_Name: SubheaderFont_override
   m_EditorClassIdentifier: 
   Font:
-    FontType: 2
-    FontAsset: {fileID: 11400000, guid: 2134b24c40dbeb847a52105e218433df, type: 2}
-    OverrideTheme: 0
-    FontColor: {r: 0.8018868, g: 0.37648475, b: 0, a: 1}
-    FontSize: 7
+    FontType: 1
+    FontAsset: {fileID: 11400000, guid: 32da6cdca61fcdc4a9a89437c77877e8, type: 2}
+    OverrideTheme: 1
+    FontColor: {r: 0.6981132, g: 0.46267113, b: 0, a: 1}
+    FontSize: 16
     AutoScale: 1
     MinFontSize: 8
-    MaxFontSize: 22
+    MaxFontSize: 32
     FontData: 

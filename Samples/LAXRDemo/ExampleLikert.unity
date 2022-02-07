@@ -321,6 +321,9 @@ MonoBehaviour:
   AfterPageSetupEvent:
     m_PersistentCalls:
       m_Calls: []
+  DataEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1264324934
 Transform:
   m_ObjectHideFlags: 0
